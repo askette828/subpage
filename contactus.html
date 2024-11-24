@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stlyles/site-plan-rafting.css">
+    <title>Contact Us - Dry Oar Boating</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+        </a>
+        <nav>
+            <a class="nav_link" href="index.html" aria-label="Go to Home">Home</a>
+            <a class="nav_link" href="rivers.html" aria-label="Rivers">Rivers</a>
+            <a class="nav_link" href="site-plan-rafting.html" aria-label="View Site Plan">Site Plan</a>
+            <a class="nav_link" href="contactus.html" aria-label="Contact Us">Contact Us</a>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/hero.png" alt="Group of people enjoying rafting">
+        </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Contact Us</h1>
+            <h4>Get in Touch with Dry Oar</h4>
+        </section>
+    </div>
+
+    <main class="contact-grid">
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" required>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" required>
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" required></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+
+        <section class="contact-info">
+            <h2>Additional Ways to Reach Us</h2>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@dryoar.com</p>
+            <p>Address: 123 River Road, Rapids City, RC 12345</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dry Oar &copy; 2024 - Dias Doktyrbek</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" aria-label="Visit our Facebook page">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" aria-label="Visit our Twitter page">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+            <a href="https://instagram.com" aria-label="Visit our Instagram page">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
