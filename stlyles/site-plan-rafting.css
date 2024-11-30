@@ -178,3 +178,197 @@ button:hover {
     background-color: #f4f4f4;
     border-radius: 1em;
 }
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+#logo_link img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav_link:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+#hero-box {
+    flex: 1;
+}
+
+#hero-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#hero-msg {
+    flex: 1;
+    text-align: left;
+}
+
+.home-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.button-box {
+    margin-top: 1rem;
+}
+
+.book {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.book:hover {
+    background-color: #e68900;
+}
+
+/* Main Content */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+p {
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+#background {
+    background-color: #333;
+    height: 150px;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.mountains {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social {
+    margin-top: 1rem;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+
+footer .social img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-msg {
+        margin-top: 1rem;
+    }
+}
+
